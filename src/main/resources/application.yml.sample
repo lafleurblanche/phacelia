@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: phacelia
+r2dbc:
+  datasources:
+    default:
+      schema-generate: NONE
+      dialect: POSTGRES
+      url: r2dbc:postgresql://localhost:5432/sample
+      username: sample
+      password: samplePassword
+netty:
+  default:
+    allocator:
+      max-order: 3
