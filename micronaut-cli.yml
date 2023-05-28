@@ -1,6 +1,6 @@
 applicationType: default
-defaultPackage: net.konohana.sakuya.phacelia
-testFramework: spock
+defaultPackage: bet.konohana.sakuya.phacelia
+testFramework: junit
 sourceLanguage: kotlin
 buildTool: gradle_kotlin
-features: [annotation-api, app-name, data, data-r2dbc, gradle, http-client, jackson-databind, kotlin, kotlin-application, kotlin-build, kotlin-extension-functions, logback, micronaut-build, netty-server, postgres, r2dbc, readme, shade, spock, test-resources, yaml]
+features: [annotation-api, app-name, data, data-r2dbc, gradle, http-client, jackson-databind, junit, kotlin, kotlin-application, kotlin-build, kotlin-extension-functions, logback, micronaut-build, netty-server, postgres, r2dbc, readme, shade, test-resources, yaml]
