@@ -2,7 +2,6 @@ plugins {
     id("org.jetbrains.kotlin.jvm") version "1.6.21"
     id("org.jetbrains.kotlin.kapt") version "1.6.21"
     id("org.jetbrains.kotlin.plugin.allopen") version "1.6.21"
-    id("groovy") 
     id("com.github.johnrengelman.shadow") version "7.1.2"
     id("io.micronaut.application") version "3.7.9"
     id("io.micronaut.test-resources") version "3.7.9"
@@ -11,7 +10,7 @@ plugins {
 version = "0.1"
 group = "net.konohana.sakuya.phacelia"
 
-val kotlinVersion=project.properties.get("kotlinVersion")
+val kotlinVersion= project.properties["kotlinVersion"]
 repositories {
     mavenCentral()
 }
@@ -55,9 +54,9 @@ tasks {
 graalvmNative.toolchainDetection.set(false)
 micronaut {
     runtime("netty")
-    testRuntime("spock2")
+    testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("net.konohana.sakuya.phacelia.*")
+        annotations("bet.konohana.sakuya.phacelia.*")
     }
 }
