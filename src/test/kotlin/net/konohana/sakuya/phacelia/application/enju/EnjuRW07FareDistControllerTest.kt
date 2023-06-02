@@ -16,7 +16,7 @@ class EnjuRW07FareDistControllerTest(@Client("/") val client: HttpClient) {
     @Test
     fun testFindNonExistingStaCodeReturn407() {
         val thrown = assertThrows<HttpClientResponseException> {
-            client.toBlocking().exchange<Any>(ClientUrl.CLIENT_URL_AREAGW07_NOT_EXIST)
+            client.toBlocking().exchange<Any>(ClientUrl.CLIENT_URL_ENJURW07_NOT_EXIST)
         }
 
         Assertions.assertNotNull(thrown.response)
@@ -25,7 +25,7 @@ class EnjuRW07FareDistControllerTest(@Client("/") val client: HttpClient) {
 
     @Test
     fun testEnjuRWEExistingStaCode() {
-        val faredist = client.toBlocking().retrieve(ClientUrl.CLIENT_URL_AREAGW07_EXIST, EnjuRW07FareDist::class.java)
+        val faredist = client.toBlocking().retrieve(ClientUrl.CLIENT_URL_ENJURW07_EXIST, EnjuRW07FareDist::class.java)
         Assertions.assertEquals("RW0701", faredist.staCode)
     }
 
