@@ -9,6 +9,7 @@ import reactor.core.publisher.Mono
 
 /**
  * ## EnjuRW02FareDistコントローラ
+ * * 茄谷線営業キロ情報
  * @author lafleurblanche
  */
 @Controller("/enjurw02faredist")
