@@ -7,6 +7,7 @@ import io.micronaut.data.annotation.MappedProperty
 
 /**
  * ## EnjuRW08FareDistモデル
+ * * 笒谷線営業キロ情報
  * @author lafleurblanche
  */
 @MappedEntity(value = "enju_rw08_faredist")
