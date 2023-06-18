@@ -57,6 +57,6 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("bet.konohana.sakuya.phacelia.*")
+        annotations("net.konohana.sakuya.phacelia.*")
     }
 }
